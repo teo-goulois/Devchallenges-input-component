@@ -1,0 +1,48 @@
+@import "../../utilities/variables";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Poppins:wght@600&display=swap");
+
+.sidebar {
+  padding: 2rem 2.3rem;
+  // position: fixed;
+  height: 100vh;
+  background-color: $sidebar-bg;
+}
+
+.title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+
+  margin-bottom: 2rem;
+  color: $sidebar-orange;
+  span {
+    color: $sidebar-deep-blue;
+  }
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+  margin-top: 2rem;
+  border: none;
+  background-color: transparent;
+
+  color: $sidebar-gray;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
+  &:hover {
+    color: $sidebar-deep-blue;
+  }
+  &.active {
+    color: $sidebar-deep-blue;
+  }
+}

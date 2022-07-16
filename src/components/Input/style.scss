@@ -1,0 +1,159 @@
+@import "../../utilities/variables";
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap&family=Noto+Sans+JP:wght@500");
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+// setup input
+input {
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  color: $light-gray;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+// label
+label {
+  &.focus {
+    color: $blue;
+  }
+}
+
+// BASIC INPUT
+.input-wrapper {
+  width: 200px;
+  height: 56px;
+
+  margin-top: 0.25rem;
+  padding: 1rem 0.5rem;
+  border: 1px solid #828282;
+  border-radius: 8px;
+
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: $dark-gray;
+    border-color: $dark-gray;
+  }
+  &.hover {
+    color: $dark-gray;
+    border-color: $dark-gray;
+  }
+  &.focus {
+    border-color: $blue;
+  }
+}
+.input-wrapper:focus-within {
+  border-color: $blue !important;
+}
+
+// ERROR
+.input-wrapper--error {
+  width: 200px;
+  height: 56px;
+
+  margin-top: 0.25rem;
+  padding: 1rem 0.5rem;
+  border: 1px solid $red;
+  border-radius: 8px;
+
+  outline: none;
+
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: $dark-gray;
+    border-color: $dark-gray;
+  }
+  &.hover {
+    color: $dark-gray;
+    border-color: $dark-gray;
+  }
+  &.focus {
+    border-color: $red;
+  }
+}
+.input-wrapper--error:focus-within {
+  border-color: $red !important;
+}
+// DISABLED
+input[disabled] {
+  border-color: #e0e0e0;
+}
+.input-wrapper--disabled {
+  background-color: #f2f2f2;
+  border: 1px solid #e0e0e0;
+  &:hover {
+    border: 1px solid #e0e0e0;
+  }
+}
+
+// HELPERTEXT
+.helpertext {
+  color: $light-gray;
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+// ICONS
+.material-icons {
+  color: $light-gray;
+  padding: 0 0.5rem;
+}
+
+// SIZE
+.input-wrapper--sm {
+  width: 200px;
+  height: 40px;
+}
+.input-wrapper--md {
+  width: 200px;
+  height: 56px;
+}
+
+// FULLWIDTH
+.input-wrapper--fullWidth {
+  width: 100%;
+}
+
+// TEXTAREA
+textarea {
+  width: 200px;
+
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: $light-gray;
+
+  outline: none;
+  resize: none;
+  padding: 1rem 0.5rem;
+  border: 1px solid #828282;
+  border-radius: 8px;
+}
+
+.error {
+  color: $red;
+  &.hover {
+    color: $dark-gray;
+  }
+  &.focus {
+    color: $red;
+  }
+}

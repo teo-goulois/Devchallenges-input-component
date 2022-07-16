@@ -1,0 +1,60 @@
+@import "./utilities/_variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.App {
+  display: flex;
+}
+
+h1 {
+  margin: 0;
+  color: $gray;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 3rem;
+}
+
+section {
+  padding: 2rem 3rem;
+}
+
+.inputs-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+}
+
+.input-container {
+  margin-right: 2rem;
+  width: 100%;
+}
+
+.label {
+  font-family: "Ubuntu Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+
+  color: $dark-gray;
+}
+.label.active {
+  color: $light-gray;
+}
+
+.created-by {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #9e9e9e;
+
+  span {
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
